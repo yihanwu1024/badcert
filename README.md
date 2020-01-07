@@ -6,7 +6,7 @@
 A collection of certificates that sign unwanted software.
 Apart from certificates collected by the author, all certificates from [chinawareblock](https://github.com/sharoue/chinawareblock) are also included.
 
-[Telegram 群 Telegram group](https://t.me/baadcert)
+[Telegram 群 Telegram group](https://t.me/badcert)
 
 ## 一台 Windows 电脑上的安装
 
