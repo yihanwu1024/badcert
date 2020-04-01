@@ -4,7 +4,7 @@
 除作者收集的证书以外，还包含了 [chinawareblock](https://github.com/sharoue/chinawareblock) 中的所有证书。
 
 A collection of certificates that sign unwanted software.
-Apart from certificates collected by the author, all certificates from [chinawareblock](https://github.com/sharoue/chinawareblock) are also included.
+Apart from certificates collected by the author, all certificates from [chinawareblock](https://github.com/sharoue/chinawareblock) are included.
 
 [Telegram 群 Telegram group](https://t.me/badcert)
 
