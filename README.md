@@ -15,7 +15,7 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 ## 一台 Windows 电脑上的安装
 
 1. 下载 `badcerts.p7b`。
-1. 运行 `mmc` 或 `certmgr`。（如果想要管理“本地计算机”的证书，则需要以管理员身份运行。）
+1. 运行 `mmc` 或 `certmgr.msc`。（如果想要管理“本地计算机”的证书，则需要以管理员身份运行。）
 1. (如果运行了 `mmc`) 添加控制台的证书管理单元。
 1. 转到“不信任的证书”，右键空白处，在上下文菜单中选择“导入”。
 1. 选择 `badcerts.p7b`。
@@ -27,7 +27,7 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 ## Installation on a Windows computer
 
 1. Download `badcerts.p7b`.
-1. Run `mmc` or `certmgr`. (If you'd like to manage certificates in "Local Computer", you need to run as administrator.)
+1. Run `mmc` or `certmgr.msc`. (If you'd like to manage certificates in "Local Computer", you need to run as administrator.)
 1. (If you ran `mmc`) add the Certificate Management snap-in to the console.
 1. Navigate to "Disallowed", right-click on the blank space and choose "Import" in the context menu.
 1. Choose `badcerts.p7b`.
