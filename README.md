@@ -1,10 +1,10 @@
 # badcert
 
 用来给我们所唾弃的软件签名的证书集合。
-除作者收集的证书以外，还包含了 [chinawareblock](https://github.com/sharoue/chinawareblock) 中的所有证书。现有 171 个证书。
+除作者收集的证书以外，还包含了 chinawareblock 和 RevokeChinaCerts 中的一些证书。现有 197 个证书。
 
 A collection of certificates that sign unwanted software.
-Apart from certificates collected by the author, all certificates from [chinawareblock](https://github.com/sharoue/chinawareblock) are included. Now there are 171 certificates.
+Apart from certificates collected by the author, some certificates from chinawareblock and RevokeChinaCerts are included. Now there are 197 certificates.
 
 [Telegram 群 Telegram group](https://t.me/badcert)
 
