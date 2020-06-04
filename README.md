@@ -12,7 +12,15 @@ Apart from certificates collected by the author, some certificates from chinawar
 
 If you ever find a bad cert that has not been included in badcert, you are welcomed to send it to the Telegram group. It is very likely that it will be included in this certificate store.
 
-## 一台 Windows 电脑上的安装
+## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
+
+此部署工具是一个 Windows 服务，会自动更新 badcert。
+
+## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
+
+This deployment tool is a Windows service and it automatically updates badcert.
+
+## Windows 电脑上的手动安装
 
 1. 下载 `badcerts.p7b`。
 1. 运行 `mmc` 或 `certmgr.msc`。（如果想要管理“本地计算机”的证书，则需要以管理员身份运行。）
@@ -24,7 +32,7 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 
 请注意，证书存储有多个位置。“本地计算机”中的存储对这台电脑上的所有用户都有效，而“用户”中的存储只对这个用户有效。在一般情况下，你需要将证书安装到“本地计算机”中，才能阻止以管理员身份运行的程序——你应该就想要这种效果。
 
-## Installation on a Windows computer
+## Manual installation on a Windows computer
 
 1. Download `badcerts.p7b`.
 1. Run `mmc` or `certmgr.msc`. (If you'd like to manage certificates in "Local Computer", you need to run as administrator.)
