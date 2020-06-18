@@ -33,6 +33,7 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         automatic_release_tag: latest
         title: Latest release
+        prerelease: false
         files: |
           badcerts.p7b
             
