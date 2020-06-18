@@ -18,5 +18,5 @@ for file in os.listdir(cerDir):
 print(params)
 
 subprocess.run(
-    ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'result.p7b')]
+    ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'badcerts.p7b')]
     + params, cwd=rootDir)
