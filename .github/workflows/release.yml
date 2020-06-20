@@ -25,15 +25,14 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Build p7b
+    - name: Build p7b files
       run: python scripts/bundle.py
 
     - uses: marvinpinto/action-automatic-releases@latest
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        automatic_release_tag: latest
-        title: Latest release
         prerelease: false
         files: |
-          badcerts.p7b
-            
+          ca.p7b
+          codesigning.p7b
+          tls.p7b
