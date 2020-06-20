@@ -36,14 +36,14 @@ subprocess.run(
     ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'codesigning.p7b')]
     + params, cwd=rootDir)
 
-for file in os.listdir(tlsDir):
-    if not file.endswith('.cer'):
-        continue
-    params.append('-certfile')
-    params.append(join(tlsDir, file))
+# for file in os.listdir(tlsDir):
+#     if not file.endswith('.cer'):
+#         continue
+#     params.append('-certfile')
+#     params.append(join(tlsDir, file))
 
-print(params)
+# print(params)
 
-subprocess.run(
-    ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'tls.p7b')]
-    + params, cwd=rootDir)
+# subprocess.run(
+#     ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'tls.p7b')]
+#     + params, cwd=rootDir)
