@@ -1,0 +1,39 @@
+# release a new version with newest p7b files when push to master
+
+name: Release
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: install openssl
+      run: |
+        sudo apt-get install openssl -y
+
+    - name: openssl version
+      run: openssl version
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Build p7b
+      run: python scripts/bundle.py
+
+    - uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        automatic_release_tag: latest
+        title: Latest release
+        prerelease: false
+        files: |
+          badcerts.p7b
+            
