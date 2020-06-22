@@ -6,44 +6,22 @@ import subprocess
 
 rootDir = join(dirname(abspath(__file__)), '..')
 cerDir = join(rootDir, 'cer')
-caDir = join(cerDir, 'ca')
-codesigningDir = join(cerDir, 'codesigning')
-tlsDir = join(cerDir, 'tls')
 
-params = []
+for cerCatDir in os.listdir(cerDir):
 
-for file in os.listdir(caDir):
-    if not file.endswith('.cer'):
+    params = []
+
+    for file in os.listdir(cerCatDir):
+        if not file.endswith('.cer'):
+            continue
+        params.append('-certfile')
+        params.append(join(cerCatDir, file))
+
+    print(params)
+
+    if params == []:
         continue
-    params.append('-certfile')
-    params.append(join(caDir, file))
 
-print(params)
-
-subprocess.run(
-    ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'ca.p7b')]
-    + params, cwd=rootDir)
-
-for file in os.listdir(codesigningDir):
-    if not file.endswith('.cer'):
-        continue
-    params.append('-certfile')
-    params.append(join(codesigningDir, file))
-
-print(params)
-
-subprocess.run(
-    ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'codesigning.p7b')]
-    + params, cwd=rootDir)
-
-# for file in os.listdir(tlsDir):
-#     if not file.endswith('.cer'):
-#         continue
-#     params.append('-certfile')
-#     params.append(join(tlsDir, file))
-
-# print(params)
-
-# subprocess.run(
-#     ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, 'tls.p7b')]
-#     + params, cwd=rootDir)
+    subprocess.run(
+        ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, cerCatDir, '.p7b')]
+        + params, cwd=rootDir)
