@@ -11,7 +11,7 @@ for cerCatDir in os.listdir(cerDir):
 
     params = []
 
-    for file in os.listdir(cerCatDir):
+    for file in os.listdir(join(cerDir, cerCatDir)):
         if not file.endswith('.cer'):
             continue
         params.append('-certfile')
