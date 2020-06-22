@@ -7,15 +7,15 @@ import subprocess
 rootDir = join(dirname(abspath(__file__)), '..')
 cerDir = join(rootDir, 'cer')
 
-for cerCatDir in os.listdir(cerDir):
+for cerCategory in os.listdir(cerDir):
 
     params = []
 
-    for file in os.listdir(join(cerDir, cerCatDir)):
+    for file in os.listdir(join(cerDir, cerCategory)):
         if not file.endswith('.cer'):
             continue
         params.append('-certfile')
-        params.append(join(cerCatDir, file))
+        params.append(join(cerCategory, file))
 
     print(params)
 
@@ -23,5 +23,5 @@ for cerCatDir in os.listdir(cerDir):
         continue
 
     subprocess.run(
-        ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, cerCatDir, '.p7b')]
+        ['openssl', 'crl2pkcs7', '-nocrl', '-out', join(rootDir, cerCategory + '.p7b')]
         + params, cwd=rootDir)
