@@ -15,7 +15,7 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 ## 贡献者 Contributors
 
 yihanwu1024
-Liu233w (`/scripts`, CI)
+Liu233w (`/scripts/bundle.py`, CI)
 
 ## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
 
