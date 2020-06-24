@@ -1,0 +1,21 @@
+name: Test
+
+on:
+- push
+- pull_request
+
+jobs:
+  check-base64:
+    name: Check if all cer files are in base64 format
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Do test
+      run: python scripts/check-base64.py
