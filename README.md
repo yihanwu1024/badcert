@@ -30,7 +30,7 @@ This deployment tool is a Windows service that automatically updates badcert.
 1. 下载 `.p7b`。
 1. 运行 `mmc` 或 `certmgr.msc`。（如果想要管理“本地计算机”的证书，则需要以管理员身份运行。）
 1. (如果运行了 `mmc`) 添加控制台的证书管理单元。
-1. 转到“不信任的证书 → 证书”，右键空白处，在上下文菜单中选择“导入”。
+1. 转到“不信任的证书 → 证书”，右键空白处，在上下文菜单中选择“所有任务” → “导入”。
 1. 选择 `.p7b`。
 
 此时，你应该可以看到列表中出现了证书。
@@ -42,9 +42,9 @@ This deployment tool is a Windows service that automatically updates badcert.
 1. Download `.p7b`.
 1. Run `mmc` or `certmgr.msc`. (If you'd like to manage certificates in "Local Computer", you need to run as administrator.)
 1. (If you ran `mmc`) add the Certificate Management snap-in to the console.
-1. Navigate to "Disallowed → Certificates", right-click on the blank space and choose "Import" in the context menu.
+1. Navigate to "Untrusted Certificates → Certificates", right-click on the blank space, and choose "All Tasks" → "Import" in the context menu.
 1. Choose `.p7b`.
 
-You should see certificates appear in the list now.
+You should see certificates in the list now.
 
-Keep in mind that certificates can be stored in different places. Certificates stored in "Local Computer" are effective for all users on the computer, while those in "User" are only effective for that user. In common cases, you need to install these certificates to "Local Computer" to prevent the programs being executed by an administrator, which you would probably want to.
+Keep in mind that certificates can be stored in different places. Certificates stored in "Local Computer" are effective for all users on the computer, while those in "User" are only effective for that user. In common cases, you need to install these certificates to "Local Computer" to prevent the programs being executed by an administrator, and that is normally what you should expect.
