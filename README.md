@@ -17,13 +17,8 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 - yihanwu1024
 - Liu233w (Python scripts, CI)
 
-// ## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
 
-// 此部署工具是一个 Windows 服务，会自动更新 badcert。
-
-// ## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
-
-// This deployment tool is a Windows service that automatically updates badcert.
+[//]: # (This may be the most platform independent comment)## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)此部署工具是一个 Windows 服务，会自动更新 badcert。## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)This deployment tool is a Windows service that automatically updates badcert.
 
 ## Windows 电脑上的手动安装
 
@@ -35,9 +30,9 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 
 此时，你应该可以看到列表中出现了证书。
 
-**效果。**阻止程序以管理员权限运行，而**不阻止以标准权限运行。**
+**效果。** 阻止程序以管理员权限运行，而**不阻止以标准权限运行。**
 
-**政策的有效范围。**“本地计算机”中的政策对这台电脑上的所有用户都有效，而“用户”中的政策只对这个用户有效。在一般情况下，**你需要将证书安装到“本地计算机”中，才能阻止以管理员身份运行的程序**——你应该就想要这种效果。
+**政策的有效范围。** “本地计算机”中的政策对这台电脑上的所有用户都有效，而“用户”中的政策只对这个用户有效。在一般情况下，**你需要将证书安装到“本地计算机”中，才能阻止以管理员身份运行的程序**——你应该就想要这种效果。
 
 ## Manual installation on a Windows computer
 
