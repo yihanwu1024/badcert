@@ -17,8 +17,12 @@ If you ever find a bad cert that has not been included in badcert, you are welco
 - yihanwu1024
 - Liu233w (Python scripts, CI)
 
-
-[//]: # (This may be the most platform independent comment)## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)此部署工具是一个 Windows 服务，会自动更新 badcert。## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)This deployment tool is a Windows service that automatically updates badcert.
+<!--
+## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
+此部署工具是一个 Windows 服务，会自动更新 badcert。
+## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
+This deployment tool is a Windows service that automatically updates badcert.
+-->
 
 ## Windows 电脑上的手动安装
 
