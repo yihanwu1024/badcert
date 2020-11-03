@@ -48,6 +48,6 @@ This deployment tool is a Windows service that automatically updates badcert.
 
 You should see certificates in the list now. 
 
-**Effect.** To block any program to be run with administrator privileges, but **not with standard privileges.**
+**Effect.** To block any program from running with administrator privileges, but **not with standard privileges.**
 
 **Coverage of policy.** Policies in "Local Computer" are effective for all users on the computer, while those in "User" are only effective for that user. In common cases, **you need to install these certificates to "Local Computer" to prevent the programs being executed by an administrator**, which is normally what you should expect.
