@@ -12,11 +12,6 @@ Apart from certificates collected by the author, some certificates from chinawar
 
 If you ever find a bad cert that has not been included in badcert, you are welcomed to open a Pull Request or send it to the Telegram group. It is very likely that it will be included in this certificate store.
 
-## 贡献者 Contributors
-
-- yihanwu1024
-- Liu233w (Python scripts, CI)
-
 <!--
 ## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
 此部署工具是一个 Windows 服务，会自动更新 badcert。
