@@ -3,23 +3,20 @@
 用来给我们所唾弃的软件签名的证书集合。
 除作者收集的证书以外，还包含了 chinawareblock 和 RevokeChinaCerts 中的一些证书。现有 200+ 个证书。
 
-A collection of certificates that sign unwanted software.
-Apart from certificates collected by the author, some certificates from chinawareblock and RevokeChinaCerts are included. Now there are 200+ certificates.
-
-[Telegram 群 Telegram group](https://t.me/badcert)
-
 如果你发现了未被 badcert 收录的坏证书，我们欢迎你开启一个 Pull Request，或将此证书发送到 Telegram 群中。之后它很可能就会被收录。
+
+2022 年 10 月，本项目正在进行改造，故发行版本不可用。
+
+A collection of certificates that sign unwanted software.
+Some certificates from chinawareblock and RevokeChinaCerts are included, in addition to certificates collected by the author. Currently there are 200+ certificates.
 
 If you ever find a bad cert that has not been included in badcert, you are welcomed to open a Pull Request or send it to the Telegram group. It is very likely that it will be included in this certificate store.
 
-<!--
-## [BadcertDeploy Windows 部署工具 (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
-此部署工具是一个 Windows 服务，会自动更新 badcert。
-## [BadcertDeploy Windows deployment tool (Beta)](https://github.com/yihanwu1024/BadcertDeploy)
-This deployment tool is a Windows service that automatically updates badcert.
--->
+This project is under extensive change in October 2022, therefore no releases are available.
 
-## Windows 电脑上的手动安装
+[Telegram 群 Telegram group](https://t.me/badcert)
+
+<!--## Windows 电脑上的手动安装
 
 1. 下载 `.p7b`。
 1. 运行 `mmc` 或 `certmgr.msc`。（如果想要管理“本地计算机”的证书，则需要以管理员身份运行。）
@@ -45,4 +42,4 @@ You should see certificates in the list now.
 
 **Effect.** To block any program from running with administrator privileges, but **not with standard privileges.**
 
-**Coverage of policy.** Policies in "Local Computer" are effective for all users on the computer, while those in "User" are only effective for that user. In common cases, **you need to install these certificates to "Local Computer" to prevent the programs being executed by an administrator**, which is normally what you should expect.
+**Coverage of policy.** Policies in "Local Computer" are effective for all users on the computer, while those in "User" are only effective for that user. In common cases, **you need to install these certificates to "Local Computer" to prevent the programs being executed by an administrator**, which is normally what you should expect.-->
