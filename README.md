@@ -1,14 +1,14 @@
 # badcert
 
 用来给我们所唾弃的软件签名的证书集合。
-除作者收集的证书以外，还包含了 chinawareblock 和 RevokeChinaCerts 中的一些证书。现有 200+ 个证书。
+除作者收集的证书以外，还包含了 chinawareblock、Malware Patch 和 RevokeChinaCerts 中的一些证书。现有 200+ 个证书。
 
 如果你发现了未被 badcert 收录的坏证书，我们欢迎你开启一个 Pull Request，或将此证书发送到 Telegram 群中。之后它很可能就会被收录。
 
 2022 年 10 月，本项目正在进行改造，故发行版本不可用。
 
 A collection of certificates that sign unwanted software.
-Some certificates from chinawareblock and RevokeChinaCerts are included, in addition to certificates collected by the author. Currently there are 200+ certificates.
+In addition to certificates collected by the author, some certificates from chinawareblock, Malware Patch and RevokeChinaCerts are included. Currently there are 300+ certificates.
 
 If you ever find a bad cert that has not been included in badcert, you are welcomed to open a Pull Request or send it to the Telegram group. It is very likely that it will be included in this certificate store.
 
