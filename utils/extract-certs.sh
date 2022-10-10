@@ -26,7 +26,7 @@ do
     openssl asn1parse -in ${PAYLOAD_SHA256SUM}-all.pem -out ${PAYLOAD_SHA256SUM}-${OFFSET}.der -noout -offset +${OFFSET}
   fi
   openssl pkcs7 -inform DER -in ${PAYLOAD_SHA256SUM}-${OFFSET}.der -print_certs -out ${PAYLOAD_SHA256SUM}-${OFFSET}.pem
-  csplit -z -f ${PAYLOAD_SHA256SUM}-${OFFSET}- -b '%d.pem' ${PAYLOAD_SHA256SUM}-${OFFSET}.pem '%-----BEGIN CERTIFICATE-----%' '/-----BEGIN CERTIFICATE-----/' '{*}'
+  csplit -z -f ${PAYLOAD_SHA256SUM}-${OFFSET}- -b '%d.pem' ${PAYLOAD_SHA256SUM}-${OFFSET}.pem '%-----BEGIN CERTIFICATE-----%' '/-----BEGIN CERTIFICATE-----/' '{*}' > /dev/null
   rm ${PAYLOAD_SHA256SUM}-${OFFSET}.pem
   rm ${PAYLOAD_SHA256SUM}-${OFFSET}.der
   for f in ${PAYLOAD_SHA256SUM}-${OFFSET}-*
